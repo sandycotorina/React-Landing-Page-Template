@@ -209,7 +209,7 @@ a:focus,
   width: 100%;
   padding: 0;
   background: url(../img/intro-bg.jpg) center center no-repeat;
-  background-color: #e5e5e5;
+  background-color: #110e0e;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -229,10 +229,10 @@ a:focus,
 }
 .intro h1 span {
   font-weight: 800;
-  color: #5ca9fb;
+  color: #aa13d0;
 }
 .intro p {
-  color: #fff;
+  color: rgb(16, 10, 10);
   font-size: 22px;
   font-weight: 300;
   line-height: 30px;

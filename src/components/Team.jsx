@@ -1,31 +1,36 @@
 export const Team = (props) => {
   return (
-    <div id='team' className='text-center'>
+    <div id='team'>
       <div className='container'>
-        <div className='col-md-8 col-md-offset-2 section-title'>
-          <h2>Meet the Team</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
-          </p>
+        <div className='section-title text-center'>
+          <h2>struktur Organisasi</h2>
         </div>
-        <div id='row'>
-          {props.data
-            ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className='col-md-3 col-sm-6 team'>
-                  <div className='thumbnail'>
-                    {' '}
-                    <img src={d.img} alt='...' className='team-img' />
-                    <div className='caption'>
-                      <h4>{d.name}</h4>
-                      <p>{d.job}</p>
-                    </div>
+      
+       <center>
+              <button type='submit' className='btn btn-custom btn-lg'>  
+                Direktur Utama
+              </button>
+       </center>
+
+        <center>
+        <img src="img/struktur.jpg" className="img-responsive"/>
+        </center>
+
+         <center>
+              <button type='submit' className='btn btn-custom'>
+                Wakil Direktur Operasional
+              </button>
+              <button type='submit' className='btn btn-custom'>
+              Wakil Direktur Marketing
+              </button>
+              <button type='submit' className='btn btn-custom'>
+              Wakil Direktur Manajemen
+              </button>
+              <button type='submit' className='btn btn-custom'>
+                Bendahara 
+              </button>
+           </center>
                   </div>
-                </div>
-              ))
-            : 'loading'}
-        </div>
-      </div>
-    </div>
+                </div> 
   )
 }
